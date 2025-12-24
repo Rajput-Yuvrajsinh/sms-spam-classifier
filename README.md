@@ -3,7 +3,7 @@
 📌 Project Overview
 
 This project is a Machine Learning–based Email/SMS Spam Classifier that predicts whether a given message is Spam or Not Spam (Ham).
-It uses Natural Language Processing (NLP) techniques and a Naive Bayes classifier, deployed through a Streamlit web application.
+It uses Natural Language Processing techniques and a Naive Bayes classifier, deployed through a Streamlit web application.
 
 🎯 Problem Statement
 Spam messages are a common problem that waste time and may lead to fraud.
