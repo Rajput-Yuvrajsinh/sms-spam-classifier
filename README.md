@@ -1,82 +1,80 @@
-🎬 Movie Recommender System
-This is a content-based Movie Recommender System built using Python, Streamlit, and TMDb API. It suggests movies similar to the user's selection and displays posters using TMDb.
+📧 Email / SMS Spam Classifier using Python & Streamlit
 
-📌 Features
-Recommend 5 similar movies based on selected input
+📌 Project Overview
 
-Display movie posters using TMDb API
+This project is a Machine Learning–based Email/SMS Spam Classifier that predicts whether a given message is Spam or Not Spam (Ham).
+It uses Natural Language Processing (NLP) techniques and a Naive Bayes classifier, deployed through a Streamlit web application.
 
-User-friendly interface built with Streamlit
+🎯 Problem Statement
+Spam messages are a common problem that waste time and may lead to fraud.
+The objective of this project is to automatically classify incoming messages as spam or legitimate using machine learning.
 
-Lightweight and fast recommendation engine
+🧠 Machine Learning Approach
+Text Preprocessing using NLP
+TF-IDF Vectorization
+Multinomial Naive Bayes Classifier
+Model Serialization using Pickle
+Interactive UI using Streamlit
 
-📂 Project Structure
-perl
-Copy
-Edit
-movie-recommender-system/
-│
-├── app.py                 # Streamlit app script
-├── movies.pkl             # Movie metadata (title + id)
-├── similarity.pkl         # Precomputed similarity matrix
-├── requirements.txt       # List of Python dependencies
-└── README.md              # Project documentation
-🚀 How to Run
-1. Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/movie-recommender-system.git
-cd movie-recommender-system
-2. Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-3. Run the Streamlit app
-bash
-Copy
-Edit
-streamlit run app.py
-🧠 How It Works
-The system uses a content-based filtering approach.
+📂 Dataset
+Dataset Name: Spam SMS Dataset
+Source: UCI Machine Learning Repository
+Columns Used:
+v1 → Label (ham, spam)
+v2 → Message text
 
-Movie data is vectorized using NLP techniques.
+⚙️ Technologies Used
+Python
+Pandas
+Scikit-learn
+NLTK
+Streamlit
+Pickle
 
-Cosine similarity is calculated between movies.
+🔍 Text Preprocessing Steps
+Convert text to lowercase
+Tokenization
+Remove non-alphanumeric characters
+Remove stopwords and punctuation
+Apply stemming using Porter Stemmer
 
-The top 5 most similar movies are displayed along with posters.
+🧪 Model Used
+Multinomial Naive Bayes
+Well-suited for text classification problems
+Efficient and fast for large datasets
 
-🔑 TMDb API Key Setup
-To fetch movie posters, the app uses The Movie Database (TMDb) API.
+📊 Feature Extractio
+TF-IDF Vectorizer
+Maximum features: 3000
+Converts text into numerical vectors
 
-Go to TMDb
+🚀 Application Features
+User-friendly web interface
+Real-time spam prediction
 
-Sign up and navigate to Settings → API → Request API Key
+Clear result display:
+❌ Spam
+✅ Not Spam
 
-Replace the placeholder API key in your app.py:
+📈 Model Output
+Spam → Displayed in red
+Not Spam → Displayed in green
 
-python
-Copy
-Edit
-api_key = 'YOUR_TMDB_API_KEY'
-📸 Screenshots
-Movie Selection	Recommendations
+🧪 Example
+Input:
+"Congratulations! You have won a free prize"
+Output:
+❌ Spam
 
-🛠️ Requirements
-Python 3.7+
+🔮 Future Enhancements
+Improve accuracy using advanced models (Logistic Regression, SVM)
+Add model performance metrics
+Deploy on cloud (Heroku / Streamlit Cloud)
+Support multiple languages
 
-streamlit
-
-pandas
-
-requests
-
-pickle
-
-scikit-learn (if preprocessing is included)
-
-🙋‍♂️ Author
-Yuvrajsinh Rajput
-📧 rajputyuvrajsinh@example.com
-💼 LinkedIn
+🧠 Learning Outcomes
+Hands-on NLP preprocessing
+TF-IDF vectorization
+Naive Bayes implementation
+Model deployment using Streamlit
+End-to-end ML project workflow
